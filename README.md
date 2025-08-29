@@ -1,8 +1,24 @@
 # Backgammon Hub
 
-Modern React application with TypeScript, Vite, and Biome for creating a backgammon game.
+## 🎮 About the Project
 
-## 🚀 Tech Stack
+Backgammon Hub is a modern web implementation of the classic backgammon game built with React and TypeScript. This customizable backgammon experience offers:
+
+- **🎨 Customizable Game Board**: Personalize board colors, piece designs, and visual themes
+- **🎲 Multiple Game Variants**: Support for different backgammon rules and variations
+- **👥 Online Multiplayer**: Play with friends or match with players worldwide
+- **🤖 AI Opponents**: Practice against intelligent computer players with adjustable difficulty
+- **📊 Game Statistics**: Track your progress, wins, losses, and improvement over time
+- **🎮 Intuitive Interface**: Modern, responsive design that works seamlessly on desktop and mobile devices
+- **⚡ Real-time Gameplay**: Smooth, fast-paced gaming experience with WebSocket connections
+
+Whether you're a backgammon beginner or an experienced player, Backgammon Hub provides the perfect platform to enjoy this timeless strategy game with endless customization possibilities.
+
+---
+
+## 🛠️ Development Documentation
+
+### 🚀 Tech Stack
 
 - **⚛️ React 19** - UI library
 - **📘 TypeScript** - typed JavaScript
@@ -10,7 +26,7 @@ Modern React application with TypeScript, Vite, and Biome for creating a backgam
 - **🔧 Biome** - fast linter and formatter (replaces ESLint + Prettier)
 - **🎨 SWC** - fast compilation
 
-## 🛠️ Installation and Setup
+### 🛠️ Installation and Setup
 
 ```bash
 # Install dependencies
@@ -26,7 +42,7 @@ npm run build
 npm run preview
 ```
 
-## 📝 Available Scripts
+### 📝 Available Scripts
 
 ```bash
 npm run dev        # Start dev server
@@ -38,9 +54,9 @@ npm run format     # Format code
 npm run check      # Full code check
 ```
 
-## 🎯 Auto-formatting Setup
+### 🎯 Auto-formatting Setup
 
-### VS Code / Cursor
+#### VS Code / Cursor
 
 1. **Install Biome extension:**
    - Open Extensions (`Ctrl+Shift+X`)
@@ -58,7 +74,7 @@ npm run check      # Full code check
    - Make changes and save (`Ctrl+S`)
    - Code should automatically format
 
-### Manual Formatting
+#### Manual Formatting
 
 If auto-formatting doesn't work, use commands:
 
@@ -70,18 +86,18 @@ npm run format
 npm run lint:fix
 ```
 
-## 📋 Biome Configuration Features
+### 📋 Biome Configuration Features
 
 - **🎨 Formatting:** 2-space indentation, single quotes
 - **🔍 Linting:** recommended rules + additional React rules
 - **📦 Imports:** automatic sorting and organization
 - **⚡ Performance:** 10-100x faster than ESLint
 
-## 📦 Conventional Commits & Git Hooks
+### 📦 Contributing Guidelines
 
-This project uses standardized commit messages and automated code quality checks.
+This project follows strict code quality standards with automated checks and standardized commit messages.
 
-### 🚀 Quick Commit (Recommended)
+#### 🚀 Quick Commit (Recommended)
 
 ```bash
 # Interactive commit with guided prompts
@@ -90,7 +106,7 @@ npm run commit
 
 This opens an interactive wizard that helps you create properly formatted conventional commits.
 
-### 📋 Commit Types
+#### 📋 Commit Types
 
 - **feat**: New feature
 - **fix**: Bug fix
@@ -103,14 +119,14 @@ This opens an interactive wizard that helps you create properly formatted conven
 - **ci**: Changes to CI configuration
 - **chore**: Other changes that don't modify src or test files
 
-### ✅ Pre-commit Checks
+#### ✅ Pre-commit Checks
 
 Every commit automatically runs:
 - **Code linting** with Biome
 - **Code formatting** with Biome
 - **Commit message validation** with Commitlint
 
-### 📖 Commit Examples
+#### 📖 Commit Examples
 
 ```bash
 feat(auth): add JWT token refresh mechanism
@@ -119,7 +135,7 @@ docs: update installation instructions in README
 refactor(api): extract user validation logic
 ```
 
-### 🛠️ Manual Git Operations
+#### 🛠️ Manual Git Operations
 
 ```bash
 # Check last commit message format
@@ -128,7 +144,3 @@ npm run commit:check
 # Skip hooks (not recommended)
 git commit --no-verify -m "emergency fix"
 ```
-
-## 🎮 About the Project
-
-Backgammon Hub is a modern web implementation of the classic backgammon game with an intuitive interface and online multiplayer capabilities.
