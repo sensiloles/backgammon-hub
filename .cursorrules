@@ -1,0 +1,47 @@
+# Cursor AI Assistant Rules
+
+## Code Style and Comments
+- DO NOT add explanatory comments when implementing features
+- Code should be self-documenting through clear naming and structure
+- Only add comments for complex business logic or non-obvious implementations
+- Avoid redundant comments that simply restate what the code does
+
+## Documentation Language
+- ALL documentation must be written in English
+- This includes README files, API documentation, code comments, and inline documentation
+- Use clear, concise English without unnecessary jargon
+
+## Code Quality
+- Follow the configured Biome rules for formatting and linting
+- Use TypeScript strictly - avoid `any` types
+- Prefer functional programming patterns where appropriate
+- Write small, focused functions with single responsibilities
+
+## React Specific
+- Use functional components with hooks
+- Prefer const assertions and proper typing
+- Use proper React patterns (no direct DOM manipulation)
+- Handle errors and loading states appropriately
+
+## File Organization
+- Keep components small and focused
+- Use meaningful file and folder names
+- Group related functionality together
+- Separate business logic from UI components
+
+## Performance
+- Avoid premature optimization
+- Use React.memo and useMemo only when needed
+- Optimize bundle size when possible
+
+## Testing (when applicable)
+- Write tests for business logic
+- Test user interactions and edge cases
+- Keep tests simple and focused
+- Use descriptive test names
+
+## Git and Version Control
+- Write clear, descriptive commit messages in English
+- Use conventional commit format when possible
+- Keep commits small and focused
+- Avoid committing commented-out code or console.logs

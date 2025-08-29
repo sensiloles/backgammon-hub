@@ -1,0 +1,38 @@
+# <type>(<scope>): <subject>
+#
+# <body>
+#
+# <footer>
+
+# --- COMMIT TEMPLATE ---
+# Type can be:
+#   feat     (new feature)
+#   fix      (bug fix)
+#   docs     (changes to documentation)
+#   style    (formatting, missing semi-colons, etc; no code change)
+#   refactor (refactoring production code)
+#   test     (adding tests, refactoring test; no production code change)
+#   chore    (updating build tasks, package manager configs, etc; no production code change)
+#   perf     (performance improvements)
+#   build    (changes that affect the build system or external dependencies)
+#   ci       (changes to CI configuration files and scripts)
+#   revert   (reverts a previous commit)
+#
+# Scope is optional and should be noun that represents section of codebase
+# Examples: auth, ui, api, core, utils
+#
+# Subject should use imperative, present tense: "change" not "changed" nor "changes"
+# Subject should not end with a period
+# Subject should be 50 characters or less
+#
+# Body should include motivation for change and contrasts with previous behavior
+# Body should wrap at 72 characters
+#
+# Footer should contain any information about Breaking Changes
+# Footer should contain any information about issues that this commit Closes
+#
+# Examples:
+# feat(auth): add JWT token refresh mechanism
+# fix(ui): resolve button alignment in mobile view
+# docs: update installation instructions in README
+# refactor(api): extract user validation logic to separate module
