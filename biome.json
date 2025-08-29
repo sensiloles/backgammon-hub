@@ -27,10 +27,18 @@
     "rules": {
       "recommended": true,
       "correctness": {
-        "useExhaustiveDependencies": "warn"
+        "useExhaustiveDependencies": "warn",
+        "noUnusedImports": "error"
       },
       "suspicious": {
         "noArrayIndexKey": "error"
+      },
+      "style": {
+        "useImportType": "error",
+        "useNodejsImportProtocol": "error"
+      },
+      "nursery": {
+        "useSortedClasses": "error"
       }
     }
   },

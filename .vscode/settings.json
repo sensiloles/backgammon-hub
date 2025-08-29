@@ -25,8 +25,10 @@
   "[css]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "typescript.validate.enable": false,
-  "javascript.validate.enable": false,
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "typescript.suggest.autoImports": true,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
