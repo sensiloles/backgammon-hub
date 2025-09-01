@@ -1,0 +1,77 @@
+.player-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+}
+
+.player-panel__players {
+  background: #f9fafb;
+}
+
+.player-panel__player-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.player-panel__player {
+  position: relative;
+}
+
+.player-panel__player.current {
+  padding: 8px;
+  background: #dbeafe;
+  border-radius: 8px;
+  border: 2px solid #3b82f6;
+}
+
+.player-panel__current-indicator {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #3b82f6;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.player-panel__actions {
+  background: #f0f9ff;
+}
+
+.player-panel__dice-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.player-panel__dice-message {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  font-style: italic;
+}
+
+.player-panel__info {
+  background: #fefefe;
+}
+
+.player-panel__game-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.player-panel__detail {
+  font-size: 14px;
+  color: #374151;
+}
+
+.player-panel__detail strong {
+  color: #111827;
+}

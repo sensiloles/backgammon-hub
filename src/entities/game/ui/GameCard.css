@@ -1,0 +1,56 @@
+.game-card {
+  max-width: 350px;
+}
+
+.game-card__header {
+  margin-bottom: 12px;
+}
+
+.game-card__players {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.game-card__vs {
+  margin: 0 8px;
+  color: #6b7280;
+  font-weight: normal;
+}
+
+.game-card__status {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.game-card__status.waiting {
+  color: #f59e0b;
+}
+
+.game-card__status.active {
+  color: #059669;
+}
+
+.game-card__status.finished {
+  color: #6b7280;
+}
+
+.game-card__info {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.game-card__created {
+  margin-bottom: 4px;
+}
+
+.game-card__current-player {
+  font-weight: 500;
+  color: #374151;
+}
+
+.game-card__actions {
+  display: flex;
+  gap: 8px;
+}

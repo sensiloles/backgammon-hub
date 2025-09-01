@@ -16,6 +16,82 @@ Whether you're a backgammon beginner or an experienced player, Backgammon Hub pr
 
 ---
 
+## 🏗️ Architecture
+
+This project follows **Feature-Sliced Design (FSD)** - a modern architectural methodology for organizing frontend applications. FSD helps create scalable, maintainable code by structuring it into standardized layers and slices.
+
+### 📁 Project Structure
+
+```
+src/
+├── app/                    # App Layer - Application initialization
+│   ├── providers/          # Global providers (context, theme, etc.)
+│   └── routing/            # Application routing configuration
+├── pages/                  # Pages Layer - Application pages
+│   ├── home/               # Homepage with game creation and list
+│   ├── game/               # Game page with board and controls
+│   └── profile/            # User profile page (planned)
+├── widgets/                # Widgets Layer - Composite UI blocks
+│   ├── game-board/         # Complete backgammon board component
+│   ├── player-panel/       # Player info and game controls
+│   └── game-history/       # Game history widget (planned)
+├── features/               # Features Layer - User interactions
+│   ├── roll-dice/          # Dice rolling functionality
+│   ├── start-game/         # Game creation and setup
+│   ├── make-move/          # Move validation and execution
+│   └── join-game/          # Join existing game (planned)
+├── entities/               # Entities Layer - Business entities
+│   ├── player/             # Player entity with model and UI
+│   ├── game/               # Game entity with state management
+│   └── dice/               # Dice entity with rolling logic
+└── shared/                 # Shared Layer - Reusable resources
+    ├── ui/                 # Common UI components (Button, Card)
+    ├── api/                # API configuration and utilities
+    ├── lib/                # Utility functions and helpers
+    ├── types/              # TypeScript type definitions
+    └── config/             # Constants and configuration
+```
+
+### 🔄 Layer Dependencies
+
+FSD follows strict import rules to maintain architecture integrity:
+
+```
+app → pages → widgets → features → entities → shared
+```
+
+- Each layer can only import from layers below it
+- Same-level imports are allowed within the same slice
+- Cross-cutting shared resources are accessible to all layers
+
+### 🛠️ Development Patterns
+
+#### Adding New Features
+```bash
+src/features/new-feature/
+├── model/                  # Business logic, hooks, stores
+├── ui/                     # UI components specific to this feature
+└── index.ts               # Public API exports
+```
+
+#### Adding New Entities
+```bash
+src/entities/new-entity/
+├── model/                  # Entity logic and state management
+├── ui/                     # Entity-specific components
+└── index.ts               # Public API exports
+```
+
+#### Shared Components
+```bash
+src/shared/ui/new-component/
+├── Component.tsx           # Component implementation
+├── Component.css          # Component styles
+└── index.ts               # Component exports
+```
+
+---
+
 ## 🛠️ Development Documentation
 
 ### 🚀 Tech Stack
